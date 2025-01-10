@@ -29,7 +29,7 @@ jobs:
         # This will run the notebook and save the results as a new notebook (result_notebook.ipynb)
 
     - name: Upload results as artifact
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3  # Updated to v3
       with:
         name: result-notebook
         path: result_notebook.ipynb
